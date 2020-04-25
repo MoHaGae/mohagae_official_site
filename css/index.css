@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import "reset.css";
+
+
+/* 공통 */
+*{
+    box-sizing: border-box;
+}
+
+a, button{
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+body{
+    font-family: 'Gamja Flower', cursive;
+}
+
+button:hover{
+    outline: unset;
+}
+
+/* 유틸 */
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+
+.concept-btn{
+    border:none;
+    padding:12px 26px;
+    border-radius: 16px;
+    font-weight:bold;
+    font-size:1rem;
+    background-color: #f9ca24;  
+    color:white;
+}
+
+/* 헤더  author : 최신우 */
+header{
+    position: sticky;
+    top:0;
+    width:100%;
+    padding:24px 24px;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
+.header__wrapper.flex-row{
+    justify-content: space-between;
+    align-items: center;
+    max-width:1162px;
+    margin:0 auto;
+}
+
+
+.header__logo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logoIcon{
+    width:34px;
+}
+
+.header__logo h4{
+    margin-top:3px;
+    color: #f0932b;
+    font-weight:bold;
+    font-size: 1.2rem;
+}
+
+.header__column nav{
+    align-items: center;
+    margin-right:30px;
+}
+
+.header__column .nav__list > li{
+    margin-right:12px;
+    border-radius: 15px;
+    color: #f9ca24;
+}
+
+.header__column .nav__list > li:last-child{
+    margin-right:0px;
+}
+
+.nav__list > li > a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:92px;
+    padding:12px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+} 
+
+.nav__list > li:hover{
+    background-color: #f9ca24;
+    color:white;
+}
+
+main{
+    height: 100vh;
+}
+
+
+
+/* 푸터 author : 정민준 */
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:260px;
+    background-color: #f9ca24;       
+}
+
+footer > .footer__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.footer__write{
+    font-size:1.5rem;
+    color:white;
+    font-weight: bold;
+}
+
+.footer__svg{
+    width:50px;
+    height:50px;
+}
+.footer__alink{
+    display:flex;
+    align-items:center;
+    margin-top:15px;
+    color:white;
+    font-size:1.5rem;
+}
